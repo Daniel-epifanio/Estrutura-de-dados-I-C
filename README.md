@@ -1,2 +1,2 @@
-# Ponteiros-C
+# Algoritmos e estrutura de dados-C
 
