@@ -63,7 +63,7 @@ printf("saude: %d pontuacao: %d posicao x: %d posicao y: %d\n", meuheroi.saude, 
 heroi *ptrheroi = &meuheroi;
 
 ptrheroi -> saude -= 25;
-printf("O Heroi perdeu 25 de vida, vida atual: %d\n", ptrheroi->saude);
+printf("O Heroi perdeu 25 de vida! vida atual: %d\n", ptrheroi->saude);
 
 ptrheroi -> pontuacao += 50;
 printf("O Heroi achou 50 moedas! Pontuacao atual: %d\n", ptrheroi->pontuacao);

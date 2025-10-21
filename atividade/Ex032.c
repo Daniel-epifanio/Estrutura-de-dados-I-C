@@ -56,11 +56,11 @@ jogador.pos_x = 0;
 jogador.pos_y = 0;
 jogador.moedas = 0;
 
-printf("Posicao inicial: (%d, %d) - Moedas: %d\n", jogador.pos_x, jogador.pos_y, jogador.moedas);
+printf("Posicao inicial: (%d, %d) - moedas: %d\n", jogador.pos_x, jogador.pos_y, jogador.moedas);
 
 jogador = atualizarPersonagem(jogador);
 
-printf("Posicao atualizada: (%d, %d) - Moedas: %d\n", jogador.pos_x, jogador.pos_y, jogador.moedas);
+printf("Posicao atualizada: (%d, %d) - moedas: %d\n", jogador.pos_x, jogador.pos_y, jogador.moedas);
     return 0;
 }
 

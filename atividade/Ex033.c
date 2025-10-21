@@ -55,9 +55,9 @@ posicao_jogador.x = 0;
 posicao_jogador.y = 0;
 posicao *ponteiro_posicao = &posicao_jogador;
 
-printf("Posicao inicial do jogador: X = %d, Y = %d\n", ponteiro_posicao->x, ponteiro_posicao->y);
+printf("Posicao inicial do Jogador: X = %d, Y = %d\n", ponteiro_posicao->x, ponteiro_posicao->y);
 mover_personagem(ponteiro_posicao, 10, 5);
-printf("Posicao final do jogador: X = %d , Y = %d\n",ponteiro_posicao->x, ponteiro_posicao->y);
+printf("Posicao final do Jogador: X = %d , Y = %d\n",ponteiro_posicao->x, ponteiro_posicao->y);
     return 0;
 }
 
