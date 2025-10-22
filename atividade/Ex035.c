@@ -31,6 +31,19 @@ typedef struct
 int main(){
 
 itemcoletavel inventario[3];
+int i;
 
+for(i = 0; i < 3; i++){
+    printf("Digite o Nome e o valor em pontos\n");
+    scanf("%s %d", inventario[i].nome, &inventario[i].valor_pontos);
+}
+itemcoletavel maior_pontos = inventario[0];
+
+for(i = 0; i < 3; i++){
+     if (inventario[i].valor_pontos > maior_pontos.valor_pontos) {
+            maior_pontos = inventario[i];
+    }
+}
+    printf("O item mais valioso coletado foi: %s\n", maior_pontos.nome);
     return 0;
 }
