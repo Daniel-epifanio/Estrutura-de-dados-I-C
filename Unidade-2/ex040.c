@@ -23,7 +23,7 @@ no formato "Nome: [nome], Pontuacao: [pontuacao]".
 Feche o arquivo corretamente ao final da operação.*/
 
 #include <stdio.h>
-
+#include <stdlib.h>
 typedef struct
 {
     char nome[50];
@@ -37,7 +37,7 @@ int n = 0;
 printf("digite o número de jogadores\n");
 scanf("%d", &n);
 
-Jogador jogadores[n];
+Jogador * jogadores = malloc(n * sizeof(Jogador));
 
 for(int i = 0; i < n; i++){
 printf("Digite o nome do jogador\n");

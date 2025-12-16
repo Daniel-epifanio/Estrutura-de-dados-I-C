@@ -17,7 +17,7 @@ Utilize fprintf para escrever a mensagem final no arquivo.
 Gerencie corretamente o ponteiro do arquivo para poder escrever após ter lido todo o seu conteúdo.*/
 
 #include <stdio.h>
-
+#include <stdlib.h>
 typedef struct
 {
     int id;
@@ -29,11 +29,11 @@ int main(){
 FILE *file = fopen("player_log.txt", "r+");
 int n;
 fscanf(file, "%d", &n);
-Conquista conquistas[n];
+Conquista conquistas;
 int total = 0;
 for(int i = 0; i < n; i++){
-    fscanf(file, "%d %d", &conquistas[i].id, &conquistas[i].pontos);
-    total += conquistas[i].pontos;
+    fscanf(file, "%d %d", &conquistas.id, &conquistas.pontos);
+    total += conquistas.pontos;
 }
 printf("Total de pontos: %d\n", total);
 fseek(file, 0, SEEK_END);
