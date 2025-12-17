@@ -43,19 +43,19 @@ int main(){
     printf("Digite o valor de N\n");
     scanf("%d", &n);
 
-    int *vetooor = malloc(n*sizeof(int)); // AAAÉÉÉÉÉÉÉ
+    int *vetor = malloc(n*sizeof(int)); 
 
     for(i = 0; i < n; i++){
-        scanf("%d", &vetooor[i]);
+        scanf("%d", &vetor[i]);
     }
 
-    bolha(n, vetooor);
+    bolha(n, vetor);
 
     for ( i = 0; i < n; i++){
-        printf("%d ", vetooor[i]);
+        printf("%d ", vetor[i]);
     }
 
-    free(vetooor);
+    free(vetor);
     
     return 0;
     
